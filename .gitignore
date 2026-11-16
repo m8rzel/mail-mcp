@@ -1,3 +1,13 @@
 node_modules/
 dist/
+build/
+
+# Credentials – never commit mail passwords
 .env
+.env.*
+!.env.example
+
+# Local noise
+*.log
+npm-debug.log*
+.DS_Store
