@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "mail": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github:m8rzel/mail-mcp"
+      ],
+      "env": {
+        "IMAP_HOST": "imap.example.com",
+        "IMAP_PORT": "993",
+        "SMTP_HOST": "smtp.example.com",
+        "SMTP_PORT": "465",
+        "MAIL_USER": "du@example.com",
+        "MAIL_PASS": "dein-passwort",
+        "MAIL_FROM": "Dein Name <du@example.com>"
+      }
+    }
+  }
+}
