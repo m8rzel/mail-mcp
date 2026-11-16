@@ -1,0 +1,47 @@
+{
+  "name": "mail-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for IMAP and SMTP email access",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepare": "tsc",
+    "test": "npm run build && node test/e2e.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m8rzel/mail-mcp.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m8rzel/mail-mcp/issues"
+  },
+  "homepage": "https://github.com/m8rzel/mail-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "imapflow": "^2.12.1",
+    "mailparser": "^3.14.5",
+    "nodemailer": "^10.6.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^22.20.5",
+    "@types/nodemailer": "^8.0.2",
+    "hoodiecrow-imap": "^3.3.1",
+    "smtp-server": "^3.21.6",
+    "typescript": "^5.9.3"
+  },
+  "type": "module",
+  "bin": {
+    "mail-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
